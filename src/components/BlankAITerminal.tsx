@@ -1,10 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import bbGreen from "@/assets/bb-green.jpeg";
-import bbPurple from "@/assets/bb-purple.jpeg";
-import bbBlue from "@/assets/bb-blue.jpeg";
-import bbOrange from "@/assets/bb-orange.jpeg";
-import bbWhite from "@/assets/bb-white.jpeg";
+import bbGreen from "@/assets/bb-green.png";
+import bbPurple from "@/assets/bb-purple.png";
+import bbBlue from "@/assets/bb-blue.png";
+import bbOrange from "@/assets/bb-orange.png";
+import bbWhite from "@/assets/bb-white.png";
 
 type Mode = "meme" | "reply" | "token" | "lore" | "shitpost";
 type Persona = "green" | "purple" | "blue" | "orange" | "white";
