@@ -2,11 +2,11 @@ import { useEffect, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import BlankAITerminal from "@/components/BlankAITerminal";
 import banner from "@/assets/banner.jpeg";
-import bbGreen from "@/assets/bb-green.jpeg";
-import bbPurple from "@/assets/bb-purple.jpeg";
-import bbOrange from "@/assets/bb-orange.jpeg";
-import bbBlue from "@/assets/bb-blue.jpeg";
-import bbWhite from "@/assets/bb-white.jpeg";
+import bbGreen from "@/assets/bb-green.png";
+import bbPurple from "@/assets/bb-purple.png";
+import bbOrange from "@/assets/bb-orange.png";
+import bbBlue from "@/assets/bb-blue.png";
+import bbWhite from "@/assets/bb-white.png";
 
 const characters = [
   { src: bbGreen, name: "VOID MODE", color: "#C6FF00", glow: "glow-green" },
