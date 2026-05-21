@@ -116,13 +116,13 @@ export default function BlankAITerminal() {
       <div className="relative z-10 mb-10 text-center">
         <div className="mb-3 inline-flex items-center gap-2 rounded-full glass px-3 py-1 text-[10px] uppercase tracking-[0.3em] text-white/60">
           <span className="h-1.5 w-1.5 rounded-full bg-[var(--neon-green)] animate-flicker" />
-          blank ai // v0.void
+          Blank Boy AI // v0.void
         </div>
         <h2 className="font-display text-4xl leading-none text-white text-glow-white md:text-6xl">
           TALK TO THE <span className="text-neon-green">VOID</span>.
         </h2>
         <p className="mx-auto mt-4 max-w-xl text-sm text-white/60 md:text-base">
-          blank ai transforms nothing into culture. memes, lore, tickers, shitposts —
+          blank boy ai assistant transforms nothing into culture. memes, lore, tickers, shitposts —
           summoned from the abyss in real time.
         </p>
       </div>

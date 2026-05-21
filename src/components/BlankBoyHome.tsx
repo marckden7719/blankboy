@@ -110,7 +110,7 @@ function Nav() {
           href="#community"
           className="rounded-full bg-[var(--neon-green)] px-4 py-2 text-[11px] font-bold uppercase tracking-widest text-black hover:opacity-90"
         >
-          Buy $BLANK
+          Buy $BLANKBOY
         </a>
       </div>
     </header>
@@ -180,7 +180,7 @@ function Hero() {
             href="#community"
             className="group relative overflow-hidden rounded-full bg-[var(--neon-green)] px-8 py-4 font-display text-sm tracking-widest text-black glow-green transition hover:scale-105"
           >
-            BUY $BLANK
+            BUY $BLANKBOY
           </a>
           <a
             href="https://t.me/BlankBoyOnSol"
@@ -454,7 +454,7 @@ function Community() {
     { label: "X / TWITTER", href: "https://x.com/Blankboyonsol", c: "#FFFFFF" },
     { label: "TELEGRAM", href: "https://t.me/BlankBoyOnSol", c: "#00A3FF" },
     { label: "DEXSCREENER", href: "#", c: "#C6FF00" },
-    { label: "PUMP.FUN", href: "#", c: "#8B3DFF" },
+    { label: "Blank.Build", href: "#", c: "#8B3DFF" },
   ];
   return (
     <Section id="community">
