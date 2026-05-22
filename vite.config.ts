@@ -7,21 +7,24 @@ import { tanstackStart } from "@tanstack/react-start/plugin/vite";
 export default defineConfig({
   plugins: [
     tanstackStart({
-      server: { entry: "server" },
+      server: {
+        preset: "vercel",
+      },
     }),
+
     react(),
     tsconfigPaths(),
     tailwindcss(),
   ],
+
   resolve: {
     alias: {
       "@": "/src",
     },
-    dedupe: ["react", "react-dom", "@tanstack/react-router", "@tanstack/react-start"],
   },
+
   server: {
     port: 5173,
     host: "0.0.0.0",
-    strictPort: true,
   },
 });
