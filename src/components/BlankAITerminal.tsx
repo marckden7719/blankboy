@@ -63,52 +63,7 @@ export default function BlankAITerminal() {
   }, [output]);
 
   async function run(promptOverride?: string) {
-    const text = (promptOverride ?? input).trim();
-    if (!text || loading) return;
-    setError(null);
-    setOutput("");
-    setLoading(true);
-    abortRef.current?.abort();
-    const ctl = new AbortController();
-    abortRef.current = ctl;
-    try {
-      const res = await fetch("/api/blank-ai", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ mode, persona, input: text }),
-        signal: ctl.signal,
-      });
-      
-      if (!res.ok) {
-        let errorMessage = `gateway error: ${res.status}`;
-        try {
-          const errorData = await res.json();
-          if (errorData.message) {
-            errorMessage = errorData.message;
-          } else if (errorData.error) {
-            errorMessage = errorData.error;
-          }
-        } catch {
-          // Fallback to status code if JSON parsing fails
-        }
-        throw new Error(errorMessage);
-      }
-      
-      const reader = res.body?.getReader();
-      if (!reader) throw new Error("no stream");
-      const decoder = new TextDecoder();
-      while (true) {
-        const { done, value } = await reader.read();
-        if (done) break;
-        const chunk = decoder.decode(value, { stream: true });
-        setOutput((prev) => prev + chunk);
-      }
-    } catch (e: unknown) {
-      const err = e as { name?: string; message?: string };
-      if (err.name !== "AbortError") setError(err.message ?? "void glitch");
-    } finally {
-      setLoading(false);
-    }
+    setError("AI terminal is temporarily disabled. Check back soon!");
   }
 
   function copy() {
