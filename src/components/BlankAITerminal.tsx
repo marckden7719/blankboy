@@ -128,6 +128,9 @@ export default function BlankAITerminal() {
         <div className="mb-3 inline-flex items-center gap-2 rounded-full glass px-3 py-1 text-[10px] uppercase tracking-[0.3em] text-white/60">
           <span className="h-1.5 w-1.5 rounded-full bg-[var(--neon-green)] animate-flicker" />
           Blank Boy AI // v0.void
+          <span className="ml-2 inline-flex items-center gap-1 rounded-full bg-orange-500/20 px-2 py-0.5 text-[9px] font-bold text-orange-400 border border-orange-500/30">
+            BETA
+          </span>
         </div>
         <h2 className="font-display text-4xl leading-none text-white text-glow-white md:text-6xl">
           TALK TO THE <span className="text-neon-green">VOID</span>.
