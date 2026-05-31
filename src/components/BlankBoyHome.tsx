@@ -7,6 +7,7 @@ import bbPurple from "@/assets/bb-purple.png";
 import bbOrange from "@/assets/bb-orange.png";
 import bbBlue from "@/assets/bb-blue.png";
 import bbWhite from "@/assets/bb-white.png";
+import glitchy from "@/assets/glitchy.png";
 
 const characters = [
   { src: bbGreen, name: "VOID MODE", color: "#C6FF00", glow: "glow-green" },
@@ -68,7 +69,7 @@ function Loader({ done }: { done: boolean }) {
       className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-void"
     >
       <motion.img
-        src={bbBlue}
+        src={glitchy}
         alt="BlankBoy"
         className="h-40 w-40 object-contain animate-flicker"
         initial={{ scale: 0.8, opacity: 0 }}
@@ -107,7 +108,7 @@ function Nav() {
     <header className="fixed top-0 left-0 right-0 z-40">
       <div className="mx-auto mt-4 flex max-w-6xl items-center justify-between rounded-full glass px-4 py-2.5 md:px-6">
         <a href="#top" className="flex items-center gap-2.5">
-          <img src={bbBlue} alt="BLANK BOY" className="h-9 w-9 rounded-full object-cover" />
+          <img src={glitchy} alt="BLANK BOY" className="h-9 w-9 rounded-full object-cover" />
           <span className="font-display text-sm tracking-widest text-white">BLANK BOY</span>
         </a>
         <nav className="hidden gap-7 text-xs uppercase tracking-[0.2em] text-white/70 md:flex">
@@ -565,7 +566,7 @@ function Footer() {
     <footer className="relative border-t border-white/10 py-12">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 px-6 md:flex-row">
         <div className="flex items-center gap-3">
-          <img src={bbBlue} alt="BLANK BOY" className="h-10 w-10 rounded-full object-cover" />
+          <img src={glitchy} alt="BLANK BOY" className="h-10 w-10 rounded-full object-cover" />
           <div>
             <p className="font-display text-sm tracking-widest text-white">BLANK BOY</p>
             <p className="text-[10px] uppercase tracking-[0.3em] text-white/40">Built on Solana</p>
