@@ -69,12 +69,22 @@ function Nav() {
           <Link to="/store" className="hover:text-neon-green">Store</Link>
           <Link to="/#community" className="hover:text-neon-green">Community</Link>
         </nav>
-        <Link
-          to="/store"
-          className="rounded-full bg-[var(--neon-green)] px-4 py-2 text-[11px] font-bold uppercase tracking-widest text-black hover:opacity-90"
-        >
-          PRE-ORDER
-        </Link>
+        <div className="flex gap-3">
+          <a
+            href="https://pump.fun"
+            target="_blank"
+            rel="noreferrer"
+            className="rounded-full bg-[var(--electric-purple)] px-4 py-2 text-[11px] font-bold uppercase tracking-widest text-white hover:opacity-90"
+          >
+            BUY $BLANKBOY
+          </a>
+          <Link
+            to="/store"
+            className="rounded-full bg-[var(--neon-green)] px-4 py-2 text-[11px] font-bold uppercase tracking-widest text-black hover:opacity-90"
+          >
+            PRE-ORDER
+          </Link>
+        </div>
       </div>
     </header>
   );
@@ -137,10 +147,12 @@ function Hero() {
             PRE-ORDER NOW
           </a>
           <a
-            href="#waitlist"
-            className="rounded-full glass px-8 py-4 font-display text-sm tracking-widest text-white transition hover:scale-105 hover:text-neon-green"
+            href="https://pump.fun"
+            target="_blank"
+            rel="noreferrer"
+            className="rounded-full glass px-8 py-4 font-display text-sm tracking-widest text-white transition hover:scale-105 hover:text-neon-green border border-[var(--electric-purple)]"
           >
-            JOIN WAITLIST
+            BUY $BLANKBOY
           </a>
         </motion.div>
       </motion.div>
@@ -240,12 +252,22 @@ function Product() {
               <span className="text-[var(--neon-green)] font-display text-sm">{status}</span>
             </div>
 
-            <button
-              onClick={() => alert("Pre-order coming soon!")}
-              className="w-full group relative overflow-hidden rounded-full bg-[var(--neon-green)] px-8 py-4 font-display text-sm tracking-widest text-black glow-green transition hover:scale-105"
-            >
-              PRE-ORDER NOW
-            </button>
+            <div className="flex gap-3 w-full">
+              <button
+                onClick={() => alert("Pre-order coming soon!")}
+                className="flex-1 group relative overflow-hidden rounded-full bg-[var(--neon-green)] px-8 py-4 font-display text-sm tracking-widest text-black glow-green transition hover:scale-105"
+              >
+                PRE-ORDER NOW
+              </button>
+              <a
+                href="https://pump.fun"
+                target="_blank"
+                rel="noreferrer"
+                className="flex-1 rounded-full glass px-8 py-4 font-display text-sm tracking-widest text-white transition hover:scale-105 hover:text-neon-green border border-[var(--electric-purple)] text-center"
+              >
+                BUY $BLANKBOY
+              </a>
+            </div>
           </div>
         </div>
       </div>
