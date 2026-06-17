@@ -113,17 +113,16 @@ function Nav() {
         </a>
         <nav className="hidden gap-7 text-xs uppercase tracking-[0.2em] text-white/70 md:flex">
           <a href="#about" className="hover:text-neon-green">About</a>
-          <a href="#blank-ai" className="hover:text-neon-green">Blank AI</a>
-          <a href="#gallery" className="hover:text-neon-green">Gallery</a>
-          <a href="#tokenomics" className="hover:text-neon-green">Tokenomics</a>
-          <a href="#roadmap" className="hover:text-neon-green">Roadmap</a>
+          <a href="#vision" className="hover:text-neon-green">Vision</a>
+          <a href="#features" className="hover:text-neon-green">Features</a>
+          <a href="/store" className="hover:text-neon-green">Store</a>
           <a href="#community" className="hover:text-neon-green">Community</a>
         </nav>
         <a
-          href="#community"
+          href="/store"
           className="rounded-full bg-[var(--neon-green)] px-4 py-2 text-[11px] font-bold uppercase tracking-widest text-black hover:opacity-90"
         >
-          Buy $BLANKBOY
+          PRE-ORDER
         </a>
       </div>
     </header>
@@ -169,8 +168,8 @@ function Hero() {
           transition={{ delay: 0.4, duration: 0.8 }}
           className="font-display mt-2 text-6xl leading-none tracking-tight md:text-8xl"
         >
-          <span className="text-white text-glow-white animate-glitch inline-block">FILL</span>{" "}
-          <span className="text-neon-green text-glow-green inline-block">THE VOID.</span>
+          <span className="text-white text-glow-white animate-glitch inline-block">Your AI Friend</span>{" "}
+          <span className="text-neon-green text-glow-green inline-block">That Grows With You.</span>
         </motion.h1>
 
         <motion.p
@@ -179,8 +178,7 @@ function Hero() {
           transition={{ delay: 0.9, duration: 0.8 }}
           className="mt-6 max-w-2xl text-sm leading-relaxed text-white/70 md:text-base"
         >
-          BlankBoy, the enigmatic icon from Blank.Build, emerges from the digital void —
-          inviting creators, degens, and dreamers to write their own story.
+          The World's First Physical AI Companion for Web3. Born as a blank canvas and powered by artificial intelligence, BlankBoy learns, evolves, and grows alongside its owner.
         </motion.p>
 
         <motion.div
@@ -190,18 +188,16 @@ function Hero() {
           className="mt-10 flex flex-wrap items-center justify-center gap-4"
         >
           <a
-            href="#community"
+            href="/store"
             className="group relative overflow-hidden rounded-full bg-[var(--neon-green)] px-8 py-4 font-display text-sm tracking-widest text-black glow-green transition hover:scale-105"
           >
-            BUY $BLANKBOY
+            MEET BLANKBOY
           </a>
           <a
-            href="https://t.me/BlankBoyOnSol"
-            target="_blank"
-            rel="noreferrer"
+            href="#community"
             className="rounded-full glass px-8 py-4 font-display text-sm tracking-widest text-white transition hover:scale-105 hover:text-neon-green"
           >
-            JOIN COMMUNITY
+            JOIN THE JOURNEY
           </a>
         </motion.div>
 
@@ -245,14 +241,13 @@ function Section({ id, children, className = "" }: any) {
 
 function About() {
   const lines = [
-    "BlankBoy stands alone in the endless void.",
-    "Expressionless. Mysterious. Minimal.",
-    "A blank canvas for internet culture itself.",
-    "Nobody knows where he came from.",
-    "Nobody knows what he's thinking.",
-    "And maybe that's the point.",
-    "In a world overloaded with noise,",
-    "BlankBoy proves that less is more.",
+    "BlankBoy represents the next evolution of personal companions.",
+    "Designed as a physical character and enhanced by AI,",
+    "BlankBoy creates a bridge between human creativity,",
+    "digital identity, and community culture.",
+    "Each BlankBoy begins with limitless potential",
+    "and develops a unique story through interaction,",
+    "customization, and experience.",
   ];
   return (
     <Section id="about">
@@ -272,9 +267,9 @@ function About() {
           />
         </div>
         <div>
-          <p className="font-display text-xs tracking-[0.5em] text-neon-green">// 01 · ORIGIN</p>
+          <p className="font-display text-xs tracking-[0.5em] text-neon-green">// 01 · COMPANION</p>
           <h2 className="font-display mt-3 text-5xl leading-none text-white md:text-6xl">
-            WHO IS <span className="text-neon-green text-glow-green">BLANKBOY</span>?
+            A New Era of <span className="text-neon-green text-glow-green">Companionship</span>
           </h2>
           <div className="mt-8 space-y-3">
             {lines.map((l, i) => (
@@ -291,6 +286,70 @@ function About() {
             ))}
           </div>
         </div>
+      </div>
+    </Section>
+  );
+}
+
+function Vision() {
+  return (
+    <Section id="vision">
+      <div className="mb-14 text-center">
+        <p className="font-display text-xs tracking-[0.5em] text-neon-blue">// 02 · FUTURE</p>
+        <h2 className="font-display mt-3 text-5xl text-white md:text-6xl">The Future Is Personal</h2>
+      </div>
+      <div className="relative overflow-hidden rounded-3xl glass p-10 md:p-16">
+        <Pixels count={20} color="#00A3FF" />
+        <div className="absolute -left-20 -top-20 h-60 w-60 rounded-full bg-[var(--neon-blue)] opacity-20 blur-3xl" />
+        <div className="absolute -right-20 -bottom-20 h-60 w-60 rounded-full bg-[var(--electric-purple)] opacity-20 blur-3xl" />
+        <div className="relative text-center max-w-3xl mx-auto">
+          <p className="text-xl text-white/80 leading-relaxed">
+            The future of AI should not live only on screens. It should be tangible. Interactive. Personal. BlankBoy transforms artificial intelligence into a companion that users can collect, interact with, and grow alongside for years to come.
+          </p>
+        </div>
+      </div>
+    </Section>
+  );
+}
+
+function Features() {
+  const features = [
+    { title: "AI-Powered Personality", description: "BlankBoy learns and evolves through interactions, creating a unique relationship with every owner.", color: "#C6FF00" },
+    { title: "Physical + Digital Identity", description: "A companion that exists in both the real world and digital ecosystems.", color: "#00A3FF" },
+    { title: "Community Evolution", description: "BlankBoy grows alongside a global community that continuously expands its culture, stories, and experiences.", color: "#8B3DFF" },
+    { title: "Web3 Native", description: "Built for the next generation of creators, collectors, and digital citizens.", color: "#FF9D00" },
+    { title: "Personal Customization", description: "Every BlankBoy can develop its own appearance, personality, and journey.", color: "#FFFFFF" },
+    { title: "Future Ready", description: "Designed to integrate with future AI, digital ownership, and identity technologies.", color: "#C6FF00" },
+  ];
+  return (
+    <Section id="features">
+      <div className="mb-14 text-center">
+        <p className="font-display text-xs tracking-[0.5em] text-neon-purple">// 03 · CAPABILITIES</p>
+        <h2 className="font-display mt-3 text-5xl text-white md:text-6xl">What Makes BlankBoy Special</h2>
+      </div>
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {features.map((feature, i) => (
+          <motion.div
+            key={feature.title}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: i * 0.08 }}
+            className="relative overflow-hidden rounded-2xl glass p-6"
+            style={{ boxShadow: `inset 0 0 0 1px ${feature.color}33` }}
+          >
+            <div
+              className="absolute -top-12 -right-12 h-32 w-32 rounded-full opacity-30"
+              style={{ background: feature.color, filter: "blur(40px)" }}
+            />
+            <h3 className="font-display text-xl" style={{ color: feature.color, textShadow: `0 0 14px ${feature.color}88` }}>
+              {feature.title}
+            </h3>
+            <p className="mt-3 text-sm text-white/75">
+              {feature.description}
+            </p>
+          </motion.div>
+        ))}
       </div>
     </Section>
   );
@@ -477,8 +536,8 @@ function Community() {
   const socials = [
     { label: "X / TWITTER", href: "https://x.com/Blankboyonsol", c: "#FFFFFF" },
     { label: "TELEGRAM", href: "https://t.me/BlankBoyOnSol", c: "#00A3FF" },
-    { label: "DEXSCREENER", href: "#", c: "#C6FF00" },
-    { label: "Blank.Build", href: "#", c: "#8B3DFF" },
+    { label: "STORE", href: "/store", c: "#C6FF00" },
+    { label: "pump.fun", href: "#", c: "#8B3DFF" },
   ];
   return (
     <Section id="community">
@@ -488,19 +547,19 @@ function Community() {
         <div className="absolute -left-20 -bottom-20 h-60 w-60 rounded-full bg-[var(--electric-purple)] opacity-20 blur-3xl" />
         <div className="relative grid items-center gap-10 md:grid-cols-2">
           <div>
-            <p className="font-display text-xs tracking-[0.5em] text-neon-green">// 05 · JOIN</p>
+            <p className="font-display text-xs tracking-[0.5em] text-neon-green">// 04 · TOGETHER</p>
             <h2 className="font-display mt-3 text-5xl text-white md:text-6xl">
-              ENTER THE <span className="text-neon-green text-glow-green">VOID.</span>
+              BUILT <span className="text-neon-green text-glow-green">TOGETHER</span>
             </h2>
             <p className="mt-5 max-w-md text-white/65">
-              The blank canvas is waiting. Become part of the BlankBoy collective.
+              BlankBoy is more than a product. It is a growing ecosystem of creators, collectors, builders, and dreamers shaping the future of companionship together. Every interaction adds to the story. Every owner becomes part of the journey.
             </p>
             <div className="mt-8 grid grid-cols-2 gap-3">
               {socials.map((s) => (
                 <a
                   key={s.label}
                   href={s.href}
-                  target="_blank"
+                  target={s.href.startsWith("http") ? "_blank" : undefined}
                   rel="noreferrer"
                   className="group relative overflow-hidden rounded-xl glass px-5 py-4 text-center font-display text-xs tracking-widest text-white transition hover:scale-105"
                   style={{ boxShadow: `inset 0 0 0 1px ${s.c}55` }}
@@ -569,15 +628,18 @@ function Footer() {
           <img src={logoBB} alt="BLANK BOY" className="h-10 w-10 rounded-full object-cover" />
           <div>
             <p className="font-display text-sm tracking-widest text-white">BLANK BOY</p>
-            <p className="text-[10px] uppercase tracking-[0.3em] text-white/40">Built on Solana</p>
+            <p className="text-[10px] uppercase tracking-[0.3em] text-white/40">
+              To create the world's most loved AI companion
+            </p>
           </div>
         </div>
         <div className="flex gap-5 text-xs uppercase tracking-[0.25em] text-white/60">
           <a href="https://x.com/Blankboyonsol" target="_blank" rel="noreferrer" className="hover:text-neon-green">Twitter</a>
           <a href="https://t.me/BlankBoyOnSol" target="_blank" rel="noreferrer" className="hover:text-neon-green">Telegram</a>
+          <a href="/store" className="hover:text-neon-green">Store</a>
         </div>
         <p className="text-[10px] uppercase tracking-[0.3em] text-white/30">
-          © {new Date().getFullYear()} BlankBoy · The Void
+          © {new Date().getFullYear()} BlankBoy
         </p>
       </div>
     </footer>
@@ -597,12 +659,9 @@ export default function BlankBoyHome() {
       <Nav />
       <Hero />
       <About />
-      <BlankAITerminal />
-      <Gallery />
-      <Tokenomics />
-      <Roadmap />
+      <Vision />
+      <Features />
       <Community />
-      <MemeWall />
       <Footer />
     </main>
   );
