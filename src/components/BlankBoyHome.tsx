@@ -120,12 +120,12 @@ function Nav() {
         </nav>
         <div className="flex gap-3">
           <a
-            href="https://pump.fun"
+            href="https://pump.fun/coin/C9A8fWA2X5rUZMQdKFugSXPjnRPNUHgBKiJZuky4pump"
             target="_blank"
             rel="noreferrer"
             className="rounded-full bg-[var(--electric-purple)] px-4 py-2 text-[11px] font-bold uppercase tracking-widest text-white hover:opacity-90"
           >
-            BUY $BLANKBOY
+            BUY $BBOY
           </a>
           <a
             href="/store"
@@ -204,12 +204,12 @@ function Hero() {
             PRE-ORDER NOW
           </a>
           <a
-            href="https://pump.fun"
+            href="https://pump.fun/coin/C9A8fWA2X5rUZMQdKFugSXPjnRPNUHgBKiJZuky4pump"
             target="_blank"
             rel="noreferrer"
             className="rounded-full glass px-8 py-4 font-display text-sm tracking-widest text-white transition hover:scale-105 hover:text-neon-green border border-[var(--electric-purple)]"
           >
-            BUY $BLANKBOY
+            BUY $BBOY
           </a>
         </motion.div>
 
@@ -362,6 +362,61 @@ function Features() {
             </p>
           </motion.div>
         ))}
+      </div>
+    </Section>
+  );
+}
+
+function TokenInfo() {
+  const tokenDetails = [
+    { label: "Name", value: "Blank Boy" },
+    { label: "Symbol", value: "BBOY" },
+    { label: "Contract Address", value: "C9A8fWA2X5rUZMQdKFugSXPjnRPNUHgBKiJZuky4pump" },
+  ];
+  return (
+    <Section id="token">
+      <div className="mb-14 text-center">
+        <p className="font-display text-xs tracking-[0.5em] text-neon-green">// 04 · TOKEN</p>
+        <h2 className="font-display mt-3 text-5xl text-white md:text-6xl">$BBOY Token</h2>
+      </div>
+      <div className="relative overflow-hidden rounded-3xl glass p-8 md:p-12">
+        <Pixels count={20} color="#C6FF00" />
+        <div className="absolute -left-20 -top-20 h-60 w-60 rounded-full bg-[var(--neon-green)] opacity-20 blur-3xl" />
+        <div className="absolute -right-20 -bottom-20 h-60 w-60 rounded-full bg-[var(--electric-purple)] opacity-20 blur-3xl" />
+        <div className="relative grid gap-6 md:grid-cols-3">
+          {tokenDetails.map((detail, i) => (
+            <motion.div
+              key={detail.label}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.08 }}
+              className="rounded-2xl p-6"
+              style={{ boxShadow: `inset 0 0 0 1px #C6FF0033` }}
+            >
+              <p className="text-xs uppercase tracking-[0.3em] text-white/60">{detail.label}</p>
+              <p className="mt-3 font-display text-lg text-white break-all">{detail.value}</p>
+            </motion.div>
+          ))}
+        </div>
+        <div className="mt-8 flex flex-wrap justify-center gap-4">
+          <a
+            href="https://pump.fun/coin/C9A8fWA2X5rUZMQdKFugSXPjnRPNUHgBKiJZuky4pump"
+            target="_blank"
+            rel="noreferrer"
+            className="group relative overflow-hidden rounded-full bg-[var(--neon-green)] px-8 py-4 font-display text-sm tracking-widest text-black glow-green transition hover:scale-105"
+          >
+            BUY $BBOY
+          </a>
+          <a
+            href="https://pump.fun/coin/C9A8fWA2X5rUZMQdKFugSXPjnRPNUHgBKiJZuky4pump"
+            target="_blank"
+            rel="noreferrer"
+            className="rounded-full glass px-8 py-4 font-display text-sm tracking-widest text-white transition hover:scale-105 hover:text-neon-green border border-[var(--electric-purple)]"
+          >
+            VIEW CHART
+          </a>
+        </div>
       </div>
     </Section>
   );
@@ -549,7 +604,7 @@ function Community() {
     { label: "X / TWITTER", href: "https://x.com/Blankboy_sol", c: "#FFFFFF" },
     { label: "TELEGRAM", href: "https://t.me/BlankBoyOnSol", c: "#00A3FF" },
     { label: "STORE", href: "/store", c: "#C6FF00" },
-    { label: "pump.fun", href: "#", c: "#8B3DFF" },
+    { label: "pump.fun", href: "https://pump.fun/coin/C9A8fWA2X5rUZMQdKFugSXPjnRPNUHgBKiJZuky4pump", c: "#8B3DFF" },
   ];
   return (
     <Section id="community">
@@ -673,6 +728,7 @@ export default function BlankBoyHome() {
       <About />
       <Vision />
       <Features />
+      <TokenInfo />
       <Community />
       <Footer />
     </main>
