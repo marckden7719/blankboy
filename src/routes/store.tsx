@@ -442,7 +442,7 @@ function Footer() {
         </div>
         <div className="flex gap-5 text-xs uppercase tracking-[0.25em] text-white/60">
           <Link to="/" className="hover:text-neon-green">Home</Link>
-          <a href="https://x.com/Blankboyonsol" target="_blank" rel="noreferrer" className="hover:text-neon-green">Twitter</a>
+          <a href="https://x.com/Blankboy_sol" target="_blank" rel="noreferrer" className="hover:text-neon-green">Twitter</a>
           <a href="https://t.me/BlankBoyOnSol" target="_blank" rel="noreferrer" className="hover:text-neon-green">Telegram</a>
         </div>
         <p className="text-[10px] uppercase tracking-[0.3em] text-white/30">

@@ -546,7 +546,7 @@ function Roadmap() {
 
 function Community() {
   const socials = [
-    { label: "X / TWITTER", href: "https://x.com/Blankboyonsol", c: "#FFFFFF" },
+    { label: "X / TWITTER", href: "https://x.com/Blankboy_sol", c: "#FFFFFF" },
     { label: "TELEGRAM", href: "https://t.me/BlankBoyOnSol", c: "#00A3FF" },
     { label: "STORE", href: "/store", c: "#C6FF00" },
     { label: "pump.fun", href: "#", c: "#8B3DFF" },
@@ -646,7 +646,7 @@ function Footer() {
           </div>
         </div>
         <div className="flex gap-5 text-xs uppercase tracking-[0.25em] text-white/60">
-          <a href="https://x.com/Blankboyonsol" target="_blank" rel="noreferrer" className="hover:text-neon-green">Twitter</a>
+          <a href="https://x.com/Blankboy_sol" target="_blank" rel="noreferrer" className="hover:text-neon-green">Twitter</a>
           <a href="https://t.me/BlankBoyOnSol" target="_blank" rel="noreferrer" className="hover:text-neon-green">Telegram</a>
           <a href="/store" className="hover:text-neon-green">Store</a>
         </div>
